@@ -1,44 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bshara <bshara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/28 12:08:58 by chubaka358        #+#    #+#             */
-/*   Updated: 2019/04/28 19:38:23 by bshara           ###   ########.fr       */
+/*   Created: 2019/04/28 17:22:57 by bshara            #+#    #+#             */
+/*   Updated: 2019/04/28 18:36:12 by bshara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <fcntl.h>
 #include "get_next_line.h"
 
-
-
-ssize_t		is_eof(char *s)
+int		main()
 {
-	ssize_t		i;
-	i = 0;
-	while (i < BUFF_SIZE)
-	{
-		if (s[i] == EOF)
-			return (i);
-	}
-	return (-1);
-}
-
-int			get_next_line(const int fd, char **line)
-{
-    char	s[BUFF_SIZE];
-	int		len;
-
-	if (fd < 0 || !line || read(fd, s, 0) < 0)
-		return (-1);
-	while (len = read(fd, s, BUFF_SIZE))
-	{
-		if (is_eof != -1)
-			break ;
-		*line = ft_strjoin(line, )
-	}
-	
-	return (1);
+	int fd;
+	char **s;
+	s = malloc(BUFF_SIZE * sizeof(char));
+	fd = open("42.txt", O_RDONLY);
+	get_next_line(fd, s);
+	return (0);
 }
