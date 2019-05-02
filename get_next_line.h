@@ -6,7 +6,7 @@
 /*   By: bshara <bshara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/28 12:08:48 by chubaka358        #+#    #+#             */
-/*   Updated: 2019/05/01 15:48:35 by bshara           ###   ########.fr       */
+/*   Updated: 2019/05/02 15:27:37 by bshara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 
 # define GET_NEXT_LINE_H
 # define BUFF_SIZE 32
-# define EOF '\n'
 
 int		get_next_line(const int fd, char **line);
 
