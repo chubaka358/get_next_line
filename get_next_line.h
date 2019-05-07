@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bshara <bshara@student.42.fr>              +#+  +:+       +#+        */
+/*   By: chubaka358 <chubaka358@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/28 12:08:48 by chubaka358        #+#    #+#             */
-/*   Updated: 2019/05/02 15:27:37 by bshara           ###   ########.fr       */
+/*   Updated: 2019/05/06 22:05:14 by chubaka358       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 #include <unistd.h>
 
 # define GET_NEXT_LINE_H
-# define BUFF_SIZE 32
+# define BUFF_SIZE 64
 
 int		get_next_line(const int fd, char **line);
 
