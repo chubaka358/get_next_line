@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chubaka358 <chubaka358@student.42.fr>      +#+  +:+       +#+        */
+/*   By: bshara <bshara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/28 12:08:58 by chubaka358        #+#    #+#             */
-/*   Updated: 2019/05/06 17:09:43 by chubaka358       ###   ########.fr       */
+/*   Updated: 2019/05/07 15:19:01 by bshara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,10 @@ int			ft_new_line(char **line, const int fd, char **s)
 	{
 		len++;
 	}
-	if (len == 0)
+	if ((len == 0) && s[fd][0] == '\0')
+	{
 		return (0);
+	}
 	*line = ft_strsub(s[fd], 0, len);
 	if (s[fd][len] == '\0')
 		tmp = ft_strnew(1);
